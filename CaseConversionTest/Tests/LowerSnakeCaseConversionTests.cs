@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 
 
-namespace CaseConversionTest.Tests
+namespace Andeart.CaseConversionTest
 {
 
     [TestClass]
