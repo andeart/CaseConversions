@@ -4,10 +4,14 @@
 
 namespace Andeart.CaseConversion
 {
+
     // TODO: Optimise them.
     public static class CaseConversions
     {
-        // camelCase
+        /// <summary>
+        /// Converts text to camelCase.
+        /// </summary>
+        /// <param name="text">The text to be converted.</param>
         public static string ToCamelCase (this string text)
         {
             text = text.Trim ();
@@ -24,7 +28,10 @@ namespace Andeart.CaseConversion
             return text;
         }
 
-        // PascalCase
+        /// <summary>
+        /// Converts text to PascalCase.
+        /// </summary>
+        /// <param name="text">The text to be converted.</param>
         public static string ToPascalCase (this string text)
         {
             text = text.Trim ();
@@ -41,25 +48,50 @@ namespace Andeart.CaseConversion
             return text;
         }
 
-        // lower_snake_case
+        /// <summary>
+        /// Converts text to lower_snake_case.
+        /// </summary>
+        /// <param name="text">The text to be converted.</param>
         public static string ToLowerSnakeCase (this string text)
         {
             text = text.Trim ();
-            
+
             // Replace all upper-case characters with underscore and a lower-case version of the same character.
             text = Regex.Replace (text, @"\.?([A-Z])", "_$1");
 
             // Replace all non-alphanumerics with underscores.
-            text = Regex.Replace(text, @"([^a-zA-Z\d]+)", "_");
+            text = Regex.Replace (text, @"([^a-zA-Z\d]+)", "_");
 
             // Remove vestigial leading underscore that may be created from previous steps.
             text = Regex.Replace (text, @"^_", string.Empty);
 
             // Remove vestigial trailing underscore that may be created from previous steps.
-            text = Regex.Replace(text, @"_$", string.Empty);
+            text = Regex.Replace (text, @"_$", string.Empty);
 
             // Convert all characters to lower-case.
             text = text.ToLowerInvariant ();
+
+            return text;
+        }
+
+        /// <summary>
+        /// Converts text to _underscoreCamelCase.
+        /// </summary>
+        /// <param name="text">The text to be converted.</param>
+        public static string ToUnderscoreCamelCase (this string text)
+        {
+            text = text.Trim ();
+
+            // Remove all non-alphanumerics with following characters, and capitalise their following character.
+            text = Regex.Replace (text, @"([^a-zA-Z\d]+[a-zA-Z])", RemoveAllButLastCapitalised);
+
+            // Remove any remaining non-alphanumerics (i.e. ones that don't have any following characters).
+            text = Regex.Replace (text, @"([^a-zA-Z\d])", string.Empty);
+
+            // Un-capitalise first character.
+            text = UncapitaliseFirstChar (text);
+
+            text = string.Concat ("_", text);
 
             return text;
         }

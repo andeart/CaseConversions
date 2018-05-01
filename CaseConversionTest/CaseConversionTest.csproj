@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\PascalCaseConversionTests.cs" />
     <Compile Include="Tests\LowerSnakeCaseConversionTests.cs" />
+    <Compile Include="Tests\UnderscoreCamelCaseConversionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
