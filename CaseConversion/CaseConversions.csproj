@@ -31,12 +31,6 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\Andeart.CaseConversions.xml</DocumentationFile>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\..\SNK\andeart.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
