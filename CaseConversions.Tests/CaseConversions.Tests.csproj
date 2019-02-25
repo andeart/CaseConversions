@@ -50,17 +50,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tests\CamelCaseConversionTests.cs" />
+    <Compile Include="CamelCaseConversionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\PascalCaseConversionTests.cs" />
-    <Compile Include="Tests\LowerSnakeCaseConversionTests.cs" />
-    <Compile Include="Tests\UnderscoreCamelCaseConversionTests.cs" />
+    <Compile Include="PascalCaseConversionTests.cs" />
+    <Compile Include="LowerSnakeCaseConversionTests.cs" />
+    <Compile Include="UnderscoreCamelCaseConversionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CaseConversion\CaseConversions.csproj">
+    <ProjectReference Include="..\CaseConversions\CaseConversions.csproj">
       <Project>{0FED08C0-6ECE-4458-B757-2EDB503D129B}</Project>
       <Name>CaseConversions</Name>
     </ProjectReference>
