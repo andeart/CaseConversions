@@ -6,7 +6,7 @@
 [![travis](https://img.shields.io/travis/andeart/CaseConversions.svg)](https://travis-ci.org/andeart/CaseConversions)<br />
 [![nuget-release](https://img.shields.io/nuget/v/Andeart.CaseConversions.svg)](https://www.nuget.org/packages/Andeart.CaseConversions)<br />
 [![github-release](https://img.shields.io/github/release/andeart/CaseConversions.svg)](https://github.com/andeart/CaseConversions/releases/latest)<br/>
-[![license](https://img.shields.io/github/license/andeart/CaseConversions.svg)](https://github.com/andeart/CaseConversions/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/andeart/CaseConversions.svg)](https://github.com/andeart/CaseConversions/blob/master/LICENSE.md)
 
 ## API
 ```csharp
