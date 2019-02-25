@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <license type="file">LICENSE.md</license>
+    <projectUrl>https://github.com/andeart/CaseConversions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release, with core functionalities.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>cases string-manipulation csharp dotnet</tags>
+  </metadata>
+  <files>
+    <file src="..\LICENSE.md" target="" />
+  </files>
+</package>
