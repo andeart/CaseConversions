@@ -2,8 +2,7 @@
 using System;
 
 
-
-namespace Andeart.CaseConversion.Tests
+namespace Andeart.CaseConversions.Tests
 {
 
     [TestClass]
@@ -17,15 +16,15 @@ namespace Andeart.CaseConversion.Tests
                 new Tuple<string, string> ("CaseConversionTests", "caseConversionTests"),
                 new Tuple<string, string> ("caseConversionTests", "caseConversionTests"),
                 new Tuple<string, string> ("case_conversion_tests", "caseConversionTests"),
-                new Tuple<string, string> ("case_conversionTests", "caseConversionTests"),
+                new Tuple<string, string> ("case_conversionTests", "caseConversionTests")
             };
 
             for (int i = 0; i < originalsAndExpectedOutputs.Length; i++)
             {
                 string original = originalsAndExpectedOutputs[i].Item1;
                 string expectedOutput = originalsAndExpectedOutputs[i].Item2;
-                string output = original.ToCamelCase();
-                Assert.AreEqual(output, expectedOutput, $"Original: {original} // Expected: {expectedOutput} // Output: {output}");
+                string output = original.ToCamelCase ();
+                Assert.AreEqual (output, expectedOutput, $"Original: {original} // Expected: {expectedOutput} // Output: {output}");
             }
         }
 
@@ -78,7 +77,7 @@ namespace Andeart.CaseConversion.Tests
         }
 
         [TestMethod]
-        public void ConvertToCamelCase_From_Phrases_Spaces_VaryingCases()
+        public void ConvertToCamelCase_From_Phrases_Spaces_VaryingCases ()
         {
             Tuple<string, string>[] originalsAndExpectedOutputs =
             {
@@ -96,8 +95,8 @@ namespace Andeart.CaseConversion.Tests
             {
                 string original = originalsAndExpectedOutputs[i].Item1;
                 string expectedOutput = originalsAndExpectedOutputs[i].Item2;
-                string output = original.ToCamelCase();
-                Assert.AreEqual(output, expectedOutput, $"Original: {original} // Expected: {expectedOutput} // Output: {output}");
+                string output = original.ToCamelCase ();
+                Assert.AreEqual (output, expectedOutput, $"Original: {original} // Expected: {expectedOutput} // Output: {output}");
             }
         }
     }

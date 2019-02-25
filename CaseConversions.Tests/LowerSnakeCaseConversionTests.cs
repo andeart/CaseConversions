@@ -2,7 +2,7 @@
 using System;
 
 
-namespace Andeart.CaseConversion.Tests
+namespace Andeart.CaseConversions.Tests
 {
 
     [TestClass]

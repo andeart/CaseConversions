@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 
 
-namespace Andeart.CaseConversion
+namespace Andeart.CaseConversions
 {
 
     // TODO: Optimise them.
