@@ -19,4 +19,4 @@ string ToUnderscoreCamelCase (this string text);
 ```
 
 ## Feedback and Contribution
-I always look forward to Pull Requests. If not that, feel free to drop me an email. Cheers!
+Please feel free to send in a Pull Request, or drop me an email. Cheers!
