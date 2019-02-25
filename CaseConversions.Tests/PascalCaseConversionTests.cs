@@ -1,10 +1,8 @@
-﻿using System;
-using Andeart.CaseConversion;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 
-
-namespace Andeart.CaseConversionTest
+namespace Andeart.CaseConversions.Tests
 {
 
     [TestClass]

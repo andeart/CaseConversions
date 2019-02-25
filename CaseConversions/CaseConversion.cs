@@ -1,12 +1,11 @@
 ﻿using System.Text.RegularExpressions;
 
 
-
-namespace Andeart.CaseConversion
+namespace Andeart.CaseConversions
 {
 
     // TODO: Optimise them.
-    public static class CaseConversions
+    public static class CaseConversion
     {
         /// <summary>
         /// Converts text to camelCase.
