@@ -29,7 +29,7 @@ Recommended: Install the package via NuGet console.
 ```powershell
 Install-Package Andeart.CaseConversions
 ```
-Optionally, you can instead download [the latest release](https://github.com/andeart/JsonButler/releases/latest) from the Github Releases tab.
+Optionally, you can instead download [the latest release](https://github.com/andeart/CaseConversions/releases/latest) from the Github Releases tab.
 
 ## Feedback and Contribution
 Please feel free to send in a Pull Request, or drop me an email. Cheers!
