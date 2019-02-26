@@ -1,12 +1,13 @@
 # CaseConversions
 
-**CaseConversions** lets you manipulate strings from one case-styling to another.
-
-## Status
 [![travis](https://img.shields.io/travis/andeart/CaseConversions.svg)](https://travis-ci.org/andeart/CaseConversions)<br />
 [![nuget-release](https://img.shields.io/nuget/v/Andeart.CaseConversions.svg)](https://www.nuget.org/packages/Andeart.CaseConversions)<br />
 [![github-release](https://img.shields.io/github/release/andeart/CaseConversions.svg)](https://github.com/andeart/CaseConversions/releases/latest)<br/>
 [![license](https://img.shields.io/github/license/andeart/CaseConversions.svg)](https://github.com/andeart/CaseConversions/blob/master/LICENSE.md)
+
+**CaseConversions** lets you manipulate strings from one case-styling to another. The conversion is also smart about existing casing, periods, spaces, underscores, and any other punctuation marks in the input string.
+
+For example, passing `ca_seConv.ersi onTests` as an input to `ToPascalCase()` returns `CaSeConvErsiOnTests`.
 
 ## API
 ```csharp
