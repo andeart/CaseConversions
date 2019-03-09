@@ -2,9 +2,13 @@ os: osx
 language: csharp
 solution: CaseConversions.sln
 dotnet: 2.2.104
+python: 3.7
 mono: latest
+before_install:
+  - chmod a+x ./tools/*
 install:
-  - nuget restore CaseConversions.sln
+  - pip3 install -r requirements.txt
 script:
-  - msbuild /p:Configuration=Debug CaseConversions.sln
-  - dotnet vstest CaseConversions.Tests/bin/Debug/Andeart.CaseConversions.Tests.dll /Framework:.NETFramework,Version=v4.7.1 /InIsolation /logger:trx
+  - python3 ./tools/netrestore.py -s "$TRAVIS_SOLUTION"
+  - python3 ./tools/netbuild.py -s "$TRAVIS_SOLUTION" -c "Debug"
+  - python3 ./tools/nettest.py -t "$TESTS_PATH"
