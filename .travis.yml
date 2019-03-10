@@ -19,5 +19,5 @@ install:
   - pip3 install -r requirements.txt
 script:
   - python3 -m andeart.lullapy.netrestore -s "$TRAVIS_SOLUTION"
-  - python3 -m andeart.lullapy.tools/netbuild -s "$TRAVIS_SOLUTION" -c "$CONFIG_NAME"
-  - python3 -m andeart.lullapy.tools/nettest -t "$TESTS_BIN/$CONFIG_NAME/$TESTS_ASSEMBLY"
+  - python3 -m andeart.lullapy.netbuild -s "$TRAVIS_SOLUTION" -c "$CONFIG_NAME"
+  - python3 -m andeart.lullapy.nettest -t "$TESTS_BIN/$CONFIG_NAME/$TESTS_ASSEMBLY"
